@@ -32,7 +32,7 @@ if [ $ver == 0 ] ; then
     exit
 fi
 
-
+# comme3nt added
 for ip in `seq 1 254` ; do
   ping -W 0.1 -c 2 $range.$ip | grep ttl | \
   cut -d " " -f 4 | tr -d :
